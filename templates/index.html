@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Recognition</title>
+    
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Emotion Recognition</h1>
+
+    <div class="input-row">
+        <input id="sentence" placeholder="Type something...">
+        <button id="micBtn" class="mic-btn">🎤</button>
+    </div>
+
+    <div class="btn-row">
+        <button id="analyzeBtn" class="btn primary">Analyze</button>
+        <button id="clearBtn" class="btn secondary">Clear</button>
+    </div>
+
+    <div id="predList" class="pred-list">
+        <p class="hint">Waiting for input...</p>
+    </div>
+</div>
+
+<div id="loadingOverlay" class="overlay hidden">
+    <div class="loader">Processing...</div>
+</div>
+
+<script src="/static/app.js"></script>
+
+</body>
+</html>
